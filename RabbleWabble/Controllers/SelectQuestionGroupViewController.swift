@@ -58,22 +58,24 @@ extension SelectQuestionGroupViewController: UITableViewDelegate {
                                  sender: Any?) {
         guard let viewController = segue.destination
             as? QuestionViewController else { return }
-        viewController.questionGroup = selectedQuestionGroup
+        viewController.questionStrategy = SequentialQuestionStrategy(questionGroup: selectedQuestionGroup)
         viewController.delegate = self
     }
 }
 
 // MARK: - QuestionViewControllerDelegate
-extension SelectQuestionGroupViewController: QuestionViewControllerDelegate {
-     func questionViewController(
+extension SelectQuestionGroupViewController:
+QuestionViewControllerDelegate {
+    func questionViewController(
         _ viewController: QuestionViewController,
-        didCancel questionGroup: QuestionGroup,
-        at questionIndex: Int) {
-        navigationController?.popToViewController(self, animated: true)
+        didCancel questionGroup: QuestionStrategy) {
+        navigationController?.popToViewController(self,
+                                                  animated: true)
     }
-     func questionViewController(
+    func questionViewController(
         _ viewController: QuestionViewController,
-        didComplete questionGroup: QuestionGroup) {
-        navigationController?.popToViewController(self, animated: true)
+        didComplete questionGroup: QuestionStrategy) {
+        navigationController?.popToViewController(self,
+                                                  animated: true)
     }
 }
