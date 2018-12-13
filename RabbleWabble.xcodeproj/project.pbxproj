@@ -26,6 +26,7 @@
 		D96DF99A21C17C21000F569D /* QuestionGroupCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DF99921C17C21000F569D /* QuestionGroupCaretaker.swift */; };
 		D96DF99C21C17CFE000F569D /* QuestionGroupData.json in Resources */ = {isa = PBXBuildFile; fileRef = D96DF99B21C17CFE000F569D /* QuestionGroupData.json */; };
 		D96DF99E21C17E05000F569D /* BaseQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DF99D21C17E05000F569D /* BaseQuestionStrategy.swift */; };
+		D96DF9A021C2CF83000F569D /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DF99F21C2CF83000F569D /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		D96DF99921C17C21000F569D /* QuestionGroupCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupCaretaker.swift; sourceTree = "<group>"; };
 		D96DF99B21C17CFE000F569D /* QuestionGroupData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionGroupData.json; sourceTree = "<group>"; };
 		D96DF99D21C17E05000F569D /* BaseQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseQuestionStrategy.swift; sourceTree = "<group>"; };
+		D96DF99F21C2CF83000F569D /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				D96054D321B9978100FEE9D4 /* Question.swift */,
 				D96054D521B997B100FEE9D4 /* QuestionGroup.swift */,
+				D96DF99F21C2CF83000F569D /* Observable.swift */,
 				D96DF99221C02523000F569D /* AppSettings.swift */,
 			);
 			path = Models;
@@ -234,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96DF9A021C2CF83000F569D /* Observable.swift in Sources */,
 				D96DF98F21BED4E8000F569D /* SequentialQuestionStrategy.swift in Sources */,
 				D96DF99E21C17E05000F569D /* BaseQuestionStrategy.swift in Sources */,
 				D96054D421B9978100FEE9D4 /* Question.swift in Sources */,
